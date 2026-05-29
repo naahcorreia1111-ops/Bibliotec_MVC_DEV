@@ -1,6 +1,6 @@
 /* --------- LOGIN --------- */
 .main_login {
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - var(--altura_cabecalho));
     background-image: url("../img/img\ banner.svg");
     background-size: cover;

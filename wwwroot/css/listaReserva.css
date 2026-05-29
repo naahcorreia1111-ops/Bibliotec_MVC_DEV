@@ -68,3 +68,12 @@
 .campo_form_metade {
     flex: 1;
 }
+
+.btn_excluir_reserva {
+    background-color: transparent;
+    border: none;
+}
+
+.btn_excluir_reserva:hover {
+    color: #bb0000;
+}

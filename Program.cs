@@ -1,3 +1,4 @@
+using Bibliotec_MVC.Repositories;
 using Bibliotec_MVC_DEV.Contexts;
 using Bibliotec_MVC_DEV.Interfaces;
 using Bibliotec_MVC_DEV.Repositories;
@@ -19,6 +20,8 @@ options.Cookie.IsEssential = true;
 
 builder.Services.AddScoped<IUsuarioRpository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<ILivroRepository, LivroRepository>();
+builder.Services.AddScoped<ILivroService, LivroService>();
 
 
 var app = builder.Build();

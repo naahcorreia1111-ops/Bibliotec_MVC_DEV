@@ -97,6 +97,12 @@ aside.menu_lateral_fechado span {
     padding-bottom: 5px;
 }
 
+.menu_lateral .btn_menu_logout{
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+}
+
 .menu_item_ativo {
     border-bottom: solid 2px #2FD6CB;
 }

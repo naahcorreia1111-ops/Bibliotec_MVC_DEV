@@ -19,22 +19,33 @@ namespace Bibliotec_MVC_DEV.Controllers
         }
 
         [HttpPost]
-        public async Task <IActionResult> Logar(string email, string senha)
+        public async Task<IActionResult> Logar(string email, string senha)
         {
             Usuario? usuario = await _usuarioService.AutenticarUsuario(email, senha);
 
             if (usuario != null)
             {
-               HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
-               HttpContext.Session.SetString("Admin", usuario.TipoBib.ToString());
+                HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
+                HttpContext.Session.SetString("Admin", usuario.TipoBib.ToString());
 
-               return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Livro");
             }
 
             ViewBag.Erro = "Usuário ou senha inválidos";
             return View("Index");
 
         }
+
+        [HttpPost]
+
+        public IActionResult Deslogar()
+        {
+
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+
+        }
+
 
     }
 }
