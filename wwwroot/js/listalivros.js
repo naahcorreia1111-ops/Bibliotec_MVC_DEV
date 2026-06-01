@@ -1,45 +1,45 @@
 
 // -------------------- Lógica do Modal de Detalhes --------------------
-// const botoesDetalhes = document.querySelectorAll('.btn_detalhes');
-// const modalDetalhes = document.getElementById('modalDetalhes');
-// const fecharModal = document.getElementById('fecharModal');
+const botoesDetalhes = document.querySelectorAll('.btn_detalhes');
+const modalDetalhes = document.getElementById('modalDetalhes');
+const fecharModal = document.getElementById('fecharModal');
 
-// botoesDetalhes.forEach(btn => {
-//     btn.addEventListener('click', (e) => {
-//         e.preventDefault();
+botoesDetalhes.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
 
-//         // Pegar os dados
-//         const titulo = btn.getAttribute('data-titulo');
-//         const id = btn.getAttribute('data-id');
-//         const autor = btn.getAttribute('data-autor');
-//         const editora = btn.getAttribute('data-editora');
-//         const ano = btn.getAttribute('data-ano');
-//         const status = btn.getAttribute('data-status');
-//         const categorias = btn.getAttribute('data-categorias');
-//         const sinopse = btn.getAttribute('data-sinopse');
-//         const imagem = btn.getAttribute('data-imagem');
+        // Pegar os dados
+        const titulo = btn.getAttribute('data-titulo');
+        const id = btn.getAttribute('data-id');
+        const autor = btn.getAttribute('data-autor');
+        const editora = btn.getAttribute('data-editora');
+        const ano = btn.getAttribute('data-ano');
+        const status = btn.getAttribute('data-status');
+        const categorias = btn.getAttribute('data-categorias');
+        const sinopse = btn.getAttribute('data-sinopse');
+        const imagem = btn.getAttribute('data-imagem');
 
-//         // Preencher o modal
-//         document.getElementById('modalTitulo').innerText = titulo;
-//         document.getElementById('modalId').innerText = id;
-//         document.getElementById('modalAutor').innerText = autor;
-//         document.getElementById('modalEditora').innerText = editora;
-//         document.getElementById('modalAno').innerText = ano;
-//         document.getElementById('modalStatus').innerText = status;
-//         document.getElementById('modalCategorias').innerText = categorias || 'Nenhuma';
-//         document.getElementById('modalSinopse').innerText = sinopse || 'Sem sinopse disponível.';
-//         document.getElementById('modalImagem').src = imagem;
+        // Preencher o modal
+        document.getElementById('modalTitulo').innerText = titulo;
+        document.getElementById('modalId').innerText = id;
+        document.getElementById('modalAutor').innerText = autor;
+        document.getElementById('modalEditora').innerText = editora;
+        document.getElementById('modalAno').innerText = ano;
+        document.getElementById('modalStatus').innerText = status;
+        document.getElementById('modalCategorias').innerText = categorias || 'Nenhuma';
+        document.getElementById('modalSinopse').innerText = sinopse || 'Sem sinopse disponível.';
+        document.getElementById('modalImagem').src = imagem;
 
-//         // Exibir modal
-//         modalDetalhes.style.display = 'flex';
-//     });
-// });
+        // Exibir modal
+        modalDetalhes.style.display = 'flex';
+    });
+});
 
-// if (fecharModal) {
-//     fecharModal.addEventListener('click', () => {
-//         modalDetalhes.style.display = 'none';
-//     });
-// }
+if (fecharModal) {
+    fecharModal.addEventListener('click', () => {
+        modalDetalhes.style.display = 'none';
+    });
+}
 
 // -------------------- LÓGICA DO MODAL DE EDIÇÃO --------------------
 // const modalEditar = document.getElementById('modalEditar');

@@ -10,5 +10,17 @@ namespace Bibliotec_MVC_DEV.Interfaces
     public interface ILivroRepository
     {
         Task<IEnumerable<Livro>> BuscarLivrosAsync();
+
+        Task<IEnumerable<Categoria>> ListarCategoriasAsync();
+
+        Task CadastrarLivro(Livro l);
+        Task CadastrarCatLivroAsync(LivroCategoria lc);
+
+        Task DeletarLivroAsync(Livro l);
+        
+        Task DeletarCatLivroAsync(int idLivro);
+
+        Task<Livro> BuscarLivroPorIdAsync(int id);
+
     }
 }

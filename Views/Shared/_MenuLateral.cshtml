@@ -35,8 +35,8 @@ string? controller = ViewContext.RouteData.Values["controller"]?.ToString();
                         <span>listar reservas</span>
                     </a>
 
-                    <a class="menu_item @(controller == "Livro" && acao  == "Cadastro" ? "menu_item_ativo" : "") " href="/Livro/Cadastro">
-                        <img src="img/book-plus.svg" alt="">
+                    <a class="menu_item @(controller == "Livro" && acao  == "Cadastro" ? "menu_item_ativo" : "") " asp-controller="Livro" asp-action="Cadastro">
+                        <img src="~/img/book-plus.svg" alt="">
                         <span>cadastrar livro</span>
                     </a>
                 }
@@ -44,12 +44,12 @@ string? controller = ViewContext.RouteData.Values["controller"]?.ToString();
                 else
                 {
                     <a class="menu_item @(controller == "Reserva" && acao  == "Cadastro" ? "menu_item_ativo" : "") " href="#">
-                        <img src="img/book-plus.svg" alt="">
+                        <img src="~/img/book-plus.svg" alt="">
                         <span>criar reserva</span>
                     </a>
                 }
                 <a class="menu_item @(controller == "Livro" && acao  == "Index" ? "menu_item_ativo" : "") " href="/Livro">
-                    <img src="img/books.svg" alt="">
+                    <img src="~/img/books.svg" alt="">
                     <span>listar livros</span>
                 </a>
             </div>

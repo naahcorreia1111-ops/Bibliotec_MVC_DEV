@@ -246,4 +246,4 @@ C:\Users\49867204816\Desktop\Bibliotec_MVC_DEV\obj\Debug\net10.0\compressed\7f4j
 C:\Users\49867204816\Desktop\Bibliotec_MVC_DEV\obj\Debug\net10.0\compressed\lzqlw8lziv-{0}-u97mg2q5f6-u97mg2q5f6.gz
 C:\Users\49867204816\Desktop\Bibliotec_MVC_DEV\obj\Debug\net10.0\compressed\v1p5b0tkkr-{0}-kuakd7z7eu-kuakd7z7eu.gz
 C:\Users\49867204816\Desktop\Bibliotec_MVC_DEV\obj\Debug\net10.0\compressed\4htlj3e1f6-{0}-hyni1fb3hs-hyni1fb3hs.gz
-C:\Users\49867204816\Desktop\Bibliotec_MVC_DEV\obj\Debug\net10.0\compressed\egug2xsrw7-{0}-ywjw8buhog-ywjw8buhog.gz
+C:\Users\49867204816\Desktop\Bibliotec_MVC_DEV\obj\Debug\net10.0\compressed\egug2xsrw7-{0}-vhwm7x7zjx-vhwm7x7zjx.gz
